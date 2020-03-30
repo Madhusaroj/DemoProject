@@ -56,7 +56,7 @@ public class GoogleSearchTC1 {
        // WebDriver driver = new FirefoxDriver(); 
 		driver.get("http://google.co.in/");
 		//driver.manage().window().maximize();
-		driver.findElement(By.name("q")).sendKeys("autocarindia");
+		driver.findElement(By.name("q")).sendKeys("overdrive");
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		Thread.sleep(3000);
 		driver.close();
