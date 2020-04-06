@@ -13,13 +13,14 @@ public class GoogleSearchTC1 {
 	public void TC01() throws InterruptedException {
 		// TODO Auto-generated method stub
 		//testcase
+		
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver(); 
 		driver.get("http://google.co.in/");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("q")).sendKeys("autocarindia");
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		driver.close();
 
 	}
