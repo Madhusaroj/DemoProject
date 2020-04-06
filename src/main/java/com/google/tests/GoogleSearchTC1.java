@@ -23,6 +23,7 @@ public class GoogleSearchTC1 {
             //Check if parameter passed from TestNG is 'firefox'
             if(browser.equalsIgnoreCase("firefox")){
             //create firefox instance
+		    //these are my changes
                      System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
                      driver = new FirefoxDriver();
             }
